@@ -1,13 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-react-app</title>
+    <title>Places App</title>
+
+    <!-- ✅ Google Maps JS SDK (REQUIRED) -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
+      async
+      defer
+    ></script>
   </head>
   <body>
     <div id="root"></div>
+    <div id="drawer-hook"></div>
+    <div id="backdrop-hook"></div>
+    <div id="modal-hook"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
