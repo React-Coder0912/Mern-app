@@ -5,9 +5,8 @@ const Users = () => {
   const USERS = [
     {
       id: "u1",
-      name: "Max Schwarz",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Profile_avatar_placeholder_large.png/800px-Profile_avatar_placeholder_large.png",
+      name: "Shivaraj Mothe",
+      image: "https://res.cloudinary.com/dbyn8rl1c/image/upload/v1773998020/OmFods_a4w38y.png",
       places: 3,
     },
   ];

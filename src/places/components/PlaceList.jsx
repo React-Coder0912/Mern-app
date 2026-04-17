@@ -24,7 +24,8 @@ const PlaceList = (props) => {
         list-none
         m-4 mx-auto
         p-0
-        w-[90%]
+        w-full
+        h-full
         max-w-[40rem]
       "
     >

@@ -6,43 +6,39 @@ import Card from "../../shared/components/UIElements/Card";
 
 const UserItem = (props) => {
   return (
-    <li
-      className="
-        m-4
-        w-[calc(45%-2rem)]
-        min-w-[17.5rem]
-      "
-    >
-      <Card className="p-0 overflow-hidden">
+    <li className="w-full">
+      <Card className="p-0 overflow-hidden rounded-2xl shadow-xl">
         <Link
           to={`/${props.id}/places`}
           className="
-            flex items-center
-            w-full h-full
-            p-4
-            bg-gray-800
+            flex flex-col sm:flex-row
+            items-center
+            w-full
+            bg-gray-900
             text-white
-            no-underline
-            transition-colors duration-200
+            px-8 py-10
+            gap-6
+            transition-all duration-300
             hover:bg-yellow-400
+            hover:text-gray-900
             group
           "
         >
           {/* Avatar */}
-          <div className="w-16 h-16 mr-4">
+          <div className="w-32 h-32 sm:w-36 sm:h-36 flex-shrink-0">
             <Avatar image={props.image} alt={props.name} />
           </div>
 
           {/* User Info */}
-          <div>
+          <div className="text-center sm:text-left">
             <h2
               className="
-                text-2xl
-                font-normal
-                mb-2
+                text-3xl sm:text-4xl
+                font-semibold
+                mb-3
                 text-yellow-400
-                transition-colors duration-200
-                group-hover:text-gray-800
+                group-hover:text-gray-900
+                transition-colors
               "
             >
               {props.name}
@@ -50,9 +46,10 @@ const UserItem = (props) => {
 
             <h3
               className="
-                m-0
-                transition-colors duration-200
-                group-hover:text-gray-800
+                text-lg sm:text-xl
+                opacity-90
+                group-hover:text-gray-900
+                transition-colors
               "
             >
               {props.placeCount}{" "}
